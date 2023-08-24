@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CardBoxComponent } from './components/card-box/card-box.component';
 import { CarouselItemsComponent } from './components/carousel-items/carousel-items.component';
-import { AmountBoxComponent } from './components/amount-box/amount-box.component';
 import { LogoComponent } from 'src/assets/svg/logo/logo.component';
 import { BellComponent } from 'src/assets/svg/bell/bell-icon.component';
 import { UserComponent } from 'src/assets/svg/user/user-icon.component';
-import {SearchComponent} from 'src/assets/svg/search/search-icon.component'
+import {SearchComponent} from 'src/assets/svg/search/search-icon.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CardapioComponent } from './pages/cardapio/cardapio.component';
+import { ContatoComponent } from './pages/contato/contato.component';
+import { EncomendaComponent } from './pages/encomenda/encomenda.component'
 
 
 @NgModule({
@@ -20,12 +22,14 @@ import {SearchComponent} from 'src/assets/svg/search/search-icon.component'
     LogoComponent,
     HomeComponent,
     HeaderComponent,
-    CardBoxComponent,
     CarouselItemsComponent,
-    AmountBoxComponent,
     SearchComponent,
     BellComponent,
-    UserComponent
+    UserComponent,
+    FooterComponent,
+    CardapioComponent,
+    ContatoComponent,
+    EncomendaComponent
 
   ],
   imports: [

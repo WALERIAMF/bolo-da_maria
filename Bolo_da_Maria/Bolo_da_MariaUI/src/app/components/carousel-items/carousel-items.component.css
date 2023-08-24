@@ -1,0 +1,11 @@
+  body {
+    margin: 0;
+  }
+
+  .carousel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
