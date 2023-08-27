@@ -1,1 +1,19 @@
-<p>cardapio works!</p>
+<div class="row" *ngFor="let card of cards">
+    <div class="col s12 m8">
+      <div class="card" [ngClass]="card.corFundo">
+        <a [routerLink]="['/detalhes', card.id]" class="card-link">
+          <div class="card-horizontal valign-wrapper">
+            <div class="card-image">
+              <img [src]="card.imagemPath" alt="Imagem do Card">
+            </div>
+            <div class="card-content white-text">
+              <h2><p>{{ card.titulo }}</p></h2>
+              <p>{{ card.texto }}</p>
+              <p>{{ card.conteudo}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  

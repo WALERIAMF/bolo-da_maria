@@ -13,7 +13,10 @@ import {SearchComponent} from 'src/assets/svg/search/search-icon.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-import { EncomendaComponent } from './pages/encomenda/encomenda.component'
+import { EncomendaComponent } from './pages/encomenda/encomenda.component';
+import { PageNotFoundComponentComponent } from './pages/page-not-found-component/page-not-found-component.component';
+import { DetalheComponent } from './pages/detalhe/detalhe.component';
+
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { EncomendaComponent } from './pages/encomenda/encomenda.component'
     FooterComponent,
     CardapioComponent,
     ContatoComponent,
-    EncomendaComponent
+    EncomendaComponent,
+    PageNotFoundComponentComponent,
+    DetalheComponent,
+
 
   ],
   imports: [

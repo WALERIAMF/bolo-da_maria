@@ -1,6 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+
 
 declare const M: any;
 
@@ -12,16 +11,16 @@ declare const M: any;
 
 export class CarouselItemsComponent implements AfterViewInit {
   images: string[] = [
-    'assets/imagens/Birthday_Cake-scaled.jpg',
-    'assets/imagens/bolo-rustico.png',
-    'assets/imagens/rose-cake.png'
+    'assets/imagens/carosel_01.jpg',
+    'assets/imagens/carosel_02.jpg',
+    'assets/imagens/carosel_03.jpg'
   ];
   ngAfterViewInit(): void {
     const elems = document.querySelectorAll('.carousel');
     const options = {
       fullWidth: true,
-      indicators: true, 
-      interval: 3000
+
+      interval: 300
     };
     const instances = M.Carousel.init(elems, options);
   }

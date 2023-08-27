@@ -1,23 +1,14 @@
 
 
 .nav-wrapper {
-    height: 200px; 
+    height: 90px; 
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
 }
 
 .my-logo {
-    height: 150px;
-    margin-top: -35px;
+    height: 120px;
 }
 
-#options {
-    width: 80%;
-}
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 450
-    px;
-  }
