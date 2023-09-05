@@ -1,0 +1,23 @@
+
+<br/>
+<br/>
+<br/>
+
+<div class="col s12 m8" *ngFor="let card of cards">
+  <div class="card" [ngClass]="card.corFundo">
+    <a [routerLink]="card.routerLink" class="bolo-form">
+      <div class="card-horizontal valign-wrapper">
+        <div class="card-image">
+          <img [src]="card.imagemPath" alt="Imagem do Card">
+        </div>
+        <div class="card-content white-text">
+          <h2><p>{{ card.titulo }}</p></h2>
+          <p>{{ card.texto }}</p>
+          <br/>
+          <p>{{ card.conteudo }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+  

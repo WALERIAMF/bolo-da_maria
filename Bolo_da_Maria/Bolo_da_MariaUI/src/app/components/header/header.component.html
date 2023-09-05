@@ -1,0 +1,60 @@
+<div class="navbar-fixed" style="z-index: 1001 !important">
+    <nav>
+        <div class="nav-wrapper pink lighten-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4"  style="position: absolute; top: 0; left: 0;" >
+                        <a class="brand-logo" routerLink="/carousel" >
+                            <img class="my-logo" src="assets/imagens/logo.png" />
+                        </a>
+                    </div>
+                    
+                    <div class="col s12 m4 center-align hide-on-med-and-down"  id="options" style="flex: 0 0 55%;">
+                        <ul>
+                            <li>
+                                <a routerLink="/cardapio" class="flow-text">Cardápio</a>
+                            </li>
+                            <li>
+                                <a routerLink="/encomenda" class="flow-text">Encomenda</a>
+                            </li>
+                            <li>
+                                <a routerLink="/contato" class="flow-text">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m4 right-align hide-on-med-and-down" id="search" >
+                        <form> 
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav pink lighten-3" id="mobile-demo" #mobile>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div class="center">
+                    <img class="circle responsive-img" src="assets/imagens/logo.png"/>
+                </div>
+            </div>
+        </div>
+        <li>
+            <a href="#" class="flow-text">Cardápio</a>
+        </li>
+        <li>
+            <a href="#" class="flow-text">Encomenda</a>
+        </li>
+        <li>
+            <a href="#" class="flow-text">Contato</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
