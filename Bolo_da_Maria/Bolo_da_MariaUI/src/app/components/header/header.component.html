@@ -1,0 +1,43 @@
+<!-- Menu para desktop -->
+<div class="navbar-fixed" style="z-index: 1001 !important">
+    <nav>
+        <div class="nav-wrapper pink lighten-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4 hide-on-mobile" style="position: absolute; top: 0; left: 0;">
+                        <a class="brand-logo hide-on-mobile" routerLink="/carousel">
+                            <img class="my-logo" src="assets/imagens/logo.png" />
+                        </a>
+                    </div>
+
+                    <div class="col s12 m4 center-align" id="options" style="flex: 0 0 55%;">
+                        <ul>
+                            <li>
+                                <a routerLink="/cardapio" class="flow-text">Cardápio</a>
+                            </li>
+                            <li>
+                                <a routerLink="/encomenda" class="flow-text">Encomenda</a>
+                            </li>
+                            <li>
+                                <a routerLink="/contato" class="flow-text">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="right">
+                        <li *ngIf="!isAuthenticated()">
+                            <a routerLink="/login" class="flow-text">
+                                <i class="material-icons left">person</i>Login
+                            </a>
+                        </li>
+                        <li *ngIf="isAuthenticated()">
+                            <a (click)="logout()" class="flow-text">
+                                <i class="material-icons left">exit_to_app</i>Logoff
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

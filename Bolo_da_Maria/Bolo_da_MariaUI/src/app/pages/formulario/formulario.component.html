@@ -1,0 +1,191 @@
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="card-panel teal">
+  <div class="container">
+    <h2>Monte sua Festa</h2>
+    <br />
+    <h5>Escolha as próximas delicias para divertir sua vida</h5>
+    <br />
+    <br />
+    <form>
+      <h6><strong>Escolha seu bolo</strong></h6>
+      <br />
+      <div class="input-field">
+        <select [(ngModel)]="boloMassa" id="selecao" name="boloMassa">
+          <option value="" disabled selected>Escolha a Massa do Bolo</option>
+          <option value="PaoLoBaunilha">Pão de Ló Baunilha</option>
+          <option value="PaoLoChocolate">Pão de Ló Chocolate</option>
+          <option value="BrownieChocolateBranco">Brownie Chocolate Branco</option>
+          <option value="BrownieChocolateEscuro">Brownie Chocolate Escuro</option>
+          <option value="MassaAmanteigadaBaunilha">Massa Amanteigada Baunilha</option>
+          <option value="MassaAmanteigadaChocolate">Massa Amanteigada Chocolate</option>
+          <option value="PaoMel">Pão de Mel</option>
+        </select>
+        <label for="boloMassa">Massa do Bolo</label>
+      </div>
+
+      <div class="input-field">
+        <select [(ngModel)]="boloRecheio" name="boloRecheio">
+          <option value="" disabled selected>Escolha o Recheio do Bolo</option>
+          <option value="CremeConfeiteiro">Creme de Confeiteiro</option>
+          <option value="CremeAvela">Creme de Avelã</option>
+          <option value="ChantiliNata">Chantili de Nata</option>
+          <option value="ChantiliNataMorango">Chantili de Nata com Morango</option>
+          <option value="GanacheChocolateBranco">Ganache de Chocolate Branco</option>
+          <option value="GanacheChocolateEscuro">Ganache de Chocolate Escuro</option>
+          <option value="Brigadeiro">Brigadeiro</option>
+          <option value="DoceLeite">Doce de Leite</option>
+          <option value="DoceLeiteAmeixa">Doce de Leite com Ameixa</option>
+          <option value="ChocolateBranco">Chocolate Branco</option>
+          <option value="ChocolateEscuro">Chocolate Escuro</option>
+        </select>
+        <label for="boloRecheio">Recheio do Bolo</label>
+      </div>
+
+      <div class="input-field">
+        <select [(ngModel)]="boloRecheio" name="boloCobertura">
+          <option value="" disabled selected>Escolha a Cobertura do Bolo</option>
+          <option value="SemCobertura">Sem Cobertura</option>
+          <option value="ChantillyLeiteNinho">Chantilly de Leite Ninho</option>
+          <option value="PastaAmericanadeLeiteNinho">Pasta Americana de Leite Ninho</option>
+          <option value="Brigadeiro">Brigadeiro</option>
+          <option value="ChocolateBranco">Chocolate Branco</option>
+          <option value="Chocolate Escuro">Chocolate Escuro</option>
+        </select>
+        <label for="boloCobertura">Cobertura do Bolo</label>
+      </div>
+
+      <br />
+      <br />
+
+      <h6><strong>Escolha Seu Pirulito</strong> (Pedido mínimo de 6 unidades para o Pirulito) </h6>
+      <br />
+      <div class="input-field">
+        <select [(ngModel)]="pirulitoMassa" name="pirulitoMassa">
+          <option value="" disabled selected>Escolha a Massa do Pirulito</option>
+          <option value="PaoMel">Pão de Mel</option>
+          <option value="PaoLoBaunilha">Pão de Ló Baunilha</option>
+          <option value="PaoLoChocolate">Pão de Ló Chocolate</option>
+          <option value="BoloCenoura">Bolo de Cenoura</option>
+        </select>
+        <label for="pirulitoMassa">Massa do Pirulito</label>
+      </div>
+
+      <div class="input-field">
+        <select [(ngModel)]="pirulitoRecheio" name="pirulitoRecheio">
+          <option value="" disabled selected>Escolha o Recheio do Pirulito</option>
+          <option value="DoceLeite">Doce de Leite</option>
+          <option value="Brigadeiro">Brigadeiro</option>
+          <option value="ChocolateBranco">Chocolate Branco</option>
+          <option value="Chocolate Escuro">Chocolate Escuro</option>
+        </select>
+        <label for="pirulitoRecheio">Pirulito Recheio</label>
+      </div>
+      <br />
+      <br />
+      <h6><strong>Escolha Seu Docinho</strong> (Pedido mínimo de 12 unidades por Docinho) </h6>
+      <br />
+      <div class="input-field">
+        <select [(ngModel)]="docinhos" name="docinhos" multiple>
+          <option value="BrigadeiroTradicional">Brigadeiro Tradicional</option>
+          <option value="BrigadeiroAmêndoa">Brigadeiro de Amêndoa</option>
+          <option value="BrigadeiroMM's">Brigadeiro de MM's</option>
+          <option value="BrigadeiroTradicionalMorango">Brigadeiro Tradicional com Recheio de Morango</option>
+          <option value="BrigadeiroLeiteNinhoRecheioMorango">Brigadeiro de Leite Ninho com Recheio do Morango</option>
+          <option value="BrigadeiroLeiteNinhoRecheioUva">Brigadeiro de Leite Ninho com Recheio do Uva</option>
+          <option value="BeijinhoTradicional">Beijinho Tradicional</option>
+          <option value="BeijinhoMaracuja">Beijinho de Maracujá</option>
+          <option value="CamafeuNozes">Camafeu de Nozes</option>
+          <option value="Cajuzinho">Cajuzinho</option>
+          <option value="Casadinho">Casadinho</option>
+          <option value="BichoPe">Bicho de Pé</option>
+        </select>
+        <label for="docinhos">Escolha os Docinhos (Múltiplas Seleções Permitidas)</label>
+      </div>
+      <br />
+      <h6><strong>Dados Pessoais</strong></h6>
+      <br />
+      <div class="input-field">
+        <input id="nome" type="text" [(ngModel)]="nome" name="nome">
+        <label for="nome">Nome</label>
+      </div>
+      <div class="input-field">
+        <input id="telefone" type="text" [(ngModel)]="telefone" name="telefone">
+        <label for="telefone">Telefone</label>
+      </div>
+
+      <div class="input-field col s12">
+        <input id="cep" type="text" [(ngModel)]="cep" name="cep">
+        <label for="cep">CEP</label>
+        <br />
+        <button class="waves-effect waves-light btn" (click)="buscarEnderecoPorCEP()">Localizar</button>
+        <br />
+
+        <div *ngIf="logradouro || bairro || localidade || uf || ddd === '11'" class="endereco">
+
+          <p><strong>CEP:</strong> {{ cep }}</p>
+          <p><strong>Endereço:</strong> {{ logradouro }}</p>
+
+          <div *ngIf="ddd === '11'" class="input-field col s12">
+            <input id="numero" type="text" [(ngModel)]="numero" name="numero">
+            <label for="numero">Número</label>
+          </div>
+          <div *ngIf="ddd === '11'" class="input-field col s12">
+            <input id="complemento" type="text" [(ngModel)]="complemento" name="complemento">
+            <label for="complemento">Complemento</label>
+          </div>
+          <p><strong>Bairro:</strong> {{ bairro }}</p>
+          <p><strong>Localidade:</strong> {{ localidade }}</p>
+          <p><strong>UF:</strong> {{ uf }}</p>
+          <p><strong>DDD:</strong> {{ ddd }}</p>
+          <br />
+        </div>
+      </div>
+      <div class="input-field">
+        <input id="dataEntrega" type="date" [(ngModel)]="dataEntrega" name="dataEntrega"
+          (change)="validarDataEntrega()">
+        <label for="dataEntrega">Data de Entrega</label>
+        <span class="error" *ngIf="dataEntregaInvalida">A data de entrega precisa ser maior que a data de hoje mais dois
+          dias.</span>
+      </div>
+
+      <div class="input-field">
+        <input id="numeroPessoas" type="number" [(ngModel)]="numeroPessoas" name="numeroPessoas">
+        <label for="numeroPessoas">Número de Pessoas</label>
+      </div>
+      <!--br />
+      <button class="btn waves-effect waves-light" (click)="calcularFrete()">Calcular Frete</button>
+      <br >
+
+      <div *ngIf="valorPac && prazoPac">
+        <p>Valor PAC: R$ {{ valorPac }}</p>
+        <p>Prazo PAC: {{ prazoPac }} dias úteis</p>
+      </div>
+
+      <div *ngIf="valorSedex && prazoSedex">
+        <p>Valor Sedex: R$ {{ valorSedex }}</p>
+        <p>Prazo Sedex: {{ prazoSedex }} dias úteis</p>
+      </div/-->
+
+
+      <div class="input-field">
+        <select [(ngModel)]="tema" name="tema">
+          <option value="" disabled selected>Escolha um tema</option>
+          <option value="aniversario" data-icon="images/sample-1.jpg">Aniversário</option>
+          <option value="casamento" data-icon="images/sample-1.jpg">Casamento</option>
+          <option value="personalizado">Personalizado</option>
+        </select>
+        <label>Escolha um tema</label>
+      </div>
+      <div class="input-field" *ngIf="tema === 'personalizado'">
+        <input type="file" (change)="handleImageUpload($event)" accept="image/*">
+      </div>
+      <button class="btn waves-effect waves-light" *ngIf="todosCamposPreenchidos()" (click)="gerarLink()">Enviar pelo
+        WhatsApp</button>
+    </form>
+  </div>
+</div>

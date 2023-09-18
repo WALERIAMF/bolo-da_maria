@@ -1,0 +1,10 @@
+
+   .card-horizontal .card-image img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+  }
+  .hovered-icon {
+    color: #ecebe9; 
+    cursor: pointer; 
+  }

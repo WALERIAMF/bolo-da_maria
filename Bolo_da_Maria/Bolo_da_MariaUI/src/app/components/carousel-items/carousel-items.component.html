@@ -1,0 +1,18 @@
+<br />
+<br />
+<br />
+<div class="carousel carousel-slider">
+  <div class="container">
+    <div class="carousel-slider mt-4">
+      <a *ngFor="let image of images" class="carousel-item">
+        <img [src]="image" alt="Imagem do Carrossel">
+      </a>
+    </div>
+    <a class="carousel-control-prev" href="#carouselId" (click)="prevSlide()">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" (click)="nextSlide()">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </a>
+  </div>
+</div>

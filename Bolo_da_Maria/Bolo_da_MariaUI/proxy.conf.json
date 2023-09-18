@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://viacep.com.br",
+    "secure": false
+  },
+    "/ws": {
+    "target": "https://www.cepcerto.com",
+    "secure": false
+  }
+}
