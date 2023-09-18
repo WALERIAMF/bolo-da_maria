@@ -1,5 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
-
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 declare const M: any;
 
@@ -15,13 +14,29 @@ export class CarouselItemsComponent implements AfterViewInit {
     'assets/imagens/carosel_02.jpg',
     'assets/imagens/carosel_03.jpg'
   ];
+
+  constructor(private elementRef: ElementRef) {}
+
   ngAfterViewInit(): void {
-    const elems = document.querySelectorAll('.carousel');
+    const elems = this.elementRef.nativeElement.querySelectorAll('.carousel');
     const options = {
       fullWidth: true,
-
-      interval: 3000
+      interval: 1000
     };
     const instances = M.Carousel.init(elems, options);
+  }
+
+  prevSlide() {
+    const instance = M.Carousel.getInstance(this.elementRef.nativeElement.querySelector('.carousel'));
+    if (instance) {
+      instance.prev();
+    }
+  }
+
+  nextSlide() {
+    const instance = M.Carousel.getInstance(this.elementRef.nativeElement.querySelector('.carousel'));
+    if (instance) {
+      instance.next();
+    }
   }
 }

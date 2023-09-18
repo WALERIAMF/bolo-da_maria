@@ -1,22 +1,21 @@
-
 @import "~materialize-css/dist/css/materialize.css";
 @import "~material-icons/iconfont/material-icons.css";
 
 
 
 * {
-        padding: 0;
-        margin: 0;
-        vertical-align: baseline;
-        list-style: none;
-        border: 0;
-      }
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
 
-      body,
-      html {
-        background-color: #DAB954 !important;
-      }
-      table > tbody > tr {
-        cursor: pointer;
-      }
-      
+body,
+html {
+  background-color: #DAB954 !important;
+}
+
+table>tbody>tr {
+  cursor: pointer;
+}

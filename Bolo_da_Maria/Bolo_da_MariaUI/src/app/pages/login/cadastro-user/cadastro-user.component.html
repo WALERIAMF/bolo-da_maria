@@ -1,0 +1,54 @@
+<br />
+<br />
+<br>
+<br />
+<div class="row">
+  <div class="col s12 m10 offset-m1">
+    <form [formGroup]="cadastroForm" (ngSubmit)="cadastrarUsuario()" autocomplete="off">
+      <div class="row">
+        <div class="input-field col s12 nome-input">
+          <input id="nome" type="text" class="validate" formControlName="nome" (input)="onNomeInput($event)">
+          <label for="nome">Nome</label>
+          <div *ngIf="cadastroForm?.get('nome')?.hasError('required') && cadastroForm?.get('nome')?.touched">
+            Campo Nome é obrigatório.
+          </div>
+          <div *ngIf="cadastroForm?.get('nome')?.hasError('minlength') && cadastroForm?.get('nome')?.touched">
+            O nome deve ter pelo menos 2 caracteres.
+          </div>
+          <div *ngIf="cadastroForm?.get('nome')?.hasError('maxlength') && cadastroForm?.get('nome')?.touched">
+            O nome não deve exceder 50 caracteres.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 email-input">
+          <input id="email" type="text" class="validate" formControlName="email" (input)="onEmailInput($event)"
+            required>
+          <label for="email">Email</label>
+        </div>
+        <div *ngIf="cadastroForm?.get('email')?.hasError('required') && cadastroForm?.get('email')?.touched">
+          Campo Email é obrigatório.
+        </div>
+        <div *ngIf="cadastroForm?.get('email')?.hasError('email') && cadastroForm?.get('email')?.touched">
+          Email inválido.
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="senha" type="password" class="validate" formControlName="senha" required>
+          <label for="senha">Senha</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+.row {
+    background-color: #8B4D86;
+    color: white;
+    font-size: 12px;
+    width: 60%;
+    align-items: center;
+    margin: 1px auto; 
+  }
+  
+
+  .img {
+    max-width: 125%;
+    max-height: 10%; 
+
+  }
+  
+
+  h3 {
+    color: white;
+    font-size: 24px;
+
+  }
+  
+
+  .input-field input[type="text"],
+  .input-field input[type="password"] {
+    color: white;
+    border-bottom: 1px solid white;
+    
+  }
+  
+
+  .btn {
+    background-color: #DAB954;
+    color: #8B4D86;
+  }
+  
+
+  .card-action a {
+    color: white;
+    margin-right: 20px; 
+    font-size: 24px;
+  }
+  
+
+  .card-action {
+    display: flex;
+    justify-content: flex-end; 
+    
+  }
+  
+
+  #botao{
+    justify-content: center;
+  }
