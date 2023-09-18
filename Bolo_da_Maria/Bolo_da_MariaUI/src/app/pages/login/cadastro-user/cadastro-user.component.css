@@ -1,0 +1,11 @@
+.row{
+    width: 40%;
+}
+
+.nome-input input {
+    width: 300%; 
+}
+
+.email-input input {
+    width: 200%; 
+}

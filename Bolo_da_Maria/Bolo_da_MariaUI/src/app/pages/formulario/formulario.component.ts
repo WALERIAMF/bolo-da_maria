@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as M from 'materialize-css';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 
 @Component({
@@ -37,7 +38,7 @@ export class FormularioComponent implements OnInit {
   valorSedex: string | null = null;
   prazoSedex: string | null = null;
   formulario: FormGroup | undefined;
-  
+
 
 
 
@@ -47,7 +48,7 @@ export class FormularioComponent implements OnInit {
   }
 
   todosCamposPreenchidos(): boolean {
-    return !!this.nome && !!this.telefone && !!this.dataEntrega && !!this.tema && !!this.numero ;
+    return !!this.nome && !!this.telefone && !!this.dataEntrega && !!this.tema && !!this.numero;
   }
 
 
@@ -105,7 +106,8 @@ export class FormularioComponent implements OnInit {
     this.numeroPessoas = 0;
     this.formulario = this.formBuilder.group({
 
-      cep: ['', [Validators.required, Validators.pattern('^[0-9]*$')]]
+      cep: ['', [Validators.required, Validators.pattern(/^[0-9]*$/)]]
+
     });
   }
 

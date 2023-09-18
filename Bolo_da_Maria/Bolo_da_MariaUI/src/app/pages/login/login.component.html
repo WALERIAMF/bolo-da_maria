@@ -1,0 +1,50 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row" id="pag" *ngFor="let card of cards">
+    <div class="col s2">
+        <img [src]="card.imagemPath" alt="Imagem do Card" class="img">
+    </div>
+    <div class="col s12te quervw\v78viwebswebs m6 offset-m3">
+        <div class="row">
+            <div class="col s9">
+                <h3 style="color: white;">Login</h3>
+            </div>
+        </div>
+        <div class="row">
+            <form (ngSubmit)="loginUser()" autocomplete="off">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="usuario" type="text" class="validate" [(ngModel)]="email" name="email">
+                        <label for="usuario">Usuário</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="senha" type="password" class="validate" [(ngModel)]="password" name="password">
+                        <label for="senha">Senha</label>
+                    </div>
+                </div>
+                <div class="row" id="botao">
+                    <div class="col s12">
+                        <button class="btn waves-effect waves-light" type="submit">Entrar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <a [routerLink]="['/cadastro']">Cadastro de novo usuário</a>
+            </div>
+        </div>
+        <div *ngIf="errorMensagem" class="row">
+
+            <div class="col s12">
+                <p style="color: rgb(245, 231, 231);">{{ errorMensagem }}</p>
+            </div>
+        </div>
+    </div>
+</div>
