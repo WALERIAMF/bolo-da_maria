@@ -1,6 +1,6 @@
 # Bolos da Maria
 
-![Bolo](./bolo.jpg)
+![Bolo](./bolo.jpg){ width=50% }
 
 
 Link Para a aplicação: https://waleriamf.github.io/bolo-da_maria/
