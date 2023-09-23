@@ -1,7 +1,8 @@
 # Bolos da Maria
 
 ![Bolo](./bolo.jpg){ width=50% }
-!(./bolo.jpg){ width=50% }
+<img src="./bolo.jpg" alt="Texto Alternativo" width="300"/>
+
 
 
 
